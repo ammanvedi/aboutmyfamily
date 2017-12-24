@@ -1,10 +1,11 @@
 const config = require( './config.project.js' );
-const wpConfig = require( './config.webpack.js' )
+const wpConfig = require( './config.webpack.js' );
 const gulp = require( 'gulp' );
 const webpack = require( 'webpack' );
 const gulpWebpack = require( 'gulp-webpack' );
 const concat = require( 'gulp-concat' );
 const sass = require( 'gulp-sass' );
+const webserver = require( 'gulp-webserver' );
 
 gulp.task( 'js', () => {
   return gulp.src( config.src.js )
@@ -21,6 +22,13 @@ gulp.task( 'css', () => {
 gulp.task( 'html', () => {
   return gulp.src( config.src.html )
     .pipe( gulp.dest( config.dist.html ) );
+} );
+
+gulp.task( 'webserver', () => {
+  return gulp.src( config.dist.location )
+  .pipe(webserver({
+    open: true
+  }));
 } );
 
 gulp.task( 'default', [ 'js', 'css', 'html' ] );

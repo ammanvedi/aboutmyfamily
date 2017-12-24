@@ -2,7 +2,7 @@ const config = require( './config.project.js' );
 const path = require( 'path' );
 
 module.exports = {
-    entry: config.src.entry,
+    entry: [ "babel-polyfill", config.src.entry ],
     output: {
         path: path.resolve( __dirname, config.dist.location ),
         filename: config.dist.bundleName

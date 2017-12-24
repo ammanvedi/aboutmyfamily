@@ -6,7 +6,7 @@ module.exports = {
     'html': [ './src/site/**/*.html' ]
   },
   'dist' : {
-    'location': './dist',
+    'location': './dist/',
     'html': './dist/',
     'bundleName': 'app.js'
   }

@@ -1,4 +1,4 @@
-import myClass from './lib/lib';
+import myClass from './lib/lib.js';
 
 
-new myClass();
+const x = new myClass();
