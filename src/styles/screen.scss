@@ -1,1 +1,8 @@
-@import 'component/layout';
+@import 'global/reset';
+@import 'global/trumps';
+// Global constants
+@import 'global/variables';
+
+// Define the site layout
+@import 'layout/grid';
+@import 'layout/wrapper';

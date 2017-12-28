@@ -1,0 +1,116 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "name": {
+      "$id": "/properties/name",
+      "type": "string",
+      "title": "The Name Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Surinder Sorr"
+      ]
+    },
+    "description": {
+      "$id": "/properties/description",
+      "type": "string",
+      "title": "The Description Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "The life and times of Surinder Sorr"
+      ]
+    },
+    "Entries": {
+      "$id": "/properties/Entries",
+      "type": "array",
+      "items": {
+        "$id": "/properties/Entries/items",
+        "type": "object",
+        "properties": {
+          "title": {
+            "$id": "/properties/Entries/items/properties/title",
+            "type": "string",
+            "title": "The Title Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "The Start of the story"
+            ]
+          },
+          "description": {
+            "$id": "/properties/Entries/items/properties/description",
+            "type": "string",
+            "title": "The Description Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "The description"
+            ]
+          },
+          "image": {
+            "$id": "/properties/Entries/items/properties/image",
+            "type": "object",
+            "properties": {
+              "src": {
+                "$id": "/properties/Entries/items/properties/image/properties/src",
+                "type": "string",
+                "title": "The Src Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "http://imageurl"
+                ]
+              },
+              "alt": {
+                "$id": "/properties/Entries/items/properties/image/properties/alt",
+                "type": "string",
+                "title": "The Alt Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Image desc"
+                ]
+              },
+              "srcset": {
+                "$id": "/properties/Entries/items/properties/image/properties/srcset",
+                "type": "object",
+                "properties": {
+                  "(max-width: 800px)": {
+                    "$id": "/properties/Entries/items/properties/image/properties/srcset/properties/(max-width: 800px)",
+                    "type": "object",
+                    "properties": {
+                      "image": {
+                        "$id": "/properties/Entries/items/properties/image/properties/srcset/properties/(max-width: 800px)/properties/image",
+                        "type": "string",
+                        "title": "The Image Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "http://imageurl"
+                        ]
+                      },
+                      "imageRetina": {
+                        "$id": "/properties/Entries/items/properties/image/properties/srcset/properties/(max-width: 800px)/properties/imageRetina",
+                        "type": "string",
+                        "title": "The Imageretina Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "http://imageurl"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

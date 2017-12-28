@@ -31,6 +31,8 @@
     "webpack": "^3.10.0"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "flexboxgrid": "^6.3.1",
+    "susy": "^3.0.1"
   }
 }
