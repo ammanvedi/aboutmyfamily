@@ -24,7 +24,7 @@
         "The life and times of Surinder Sorr"
       ]
     },
-    "Entries": {
+    "entries": {
       "$id": "/properties/Entries",
       "type": "array",
       "items": {

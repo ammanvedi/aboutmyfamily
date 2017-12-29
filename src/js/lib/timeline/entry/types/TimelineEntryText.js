@@ -1,7 +1,7 @@
-import './TimelineEntry.js';
+import TimelineEntry from './TimelineEntry.js';
 
 export default class TimelineEntryText extends TimelineEntry {
-  constructor() {
-
+  constructor( data ) {
+    super( data );
   }
 }

@@ -1,8 +1,6 @@
 import { APPLICATION_CORE } from '../core/ApplicationCore.js';
-
 // import all template files here
-// TODO: automate this in the build process
-import { TemplateTest } from '../resource/templates/Template.js';
+import '../resource/templates/_Export.js';
 
 const Templating = {
 

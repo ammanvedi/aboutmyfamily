@@ -1,0 +1,20 @@
+{
+  "name": "aboutmyfamily",
+  "description": "family story timeline",
+  "main": "index.js",
+  "authors": [
+    "amman vedi <amman.vedi@gmail.com>"
+  ],
+  "license": "Beerware",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "IntersectionObserver": "https://github.com/w3c/IntersectionObserver.git"
+  }
+}

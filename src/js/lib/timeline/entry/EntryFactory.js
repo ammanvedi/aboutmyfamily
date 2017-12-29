@@ -1,6 +1,6 @@
-import 'types/TimelineEntryFeatured.js';
-import 'types/TimelineEntryHero.js';
-import 'types/TimelineEntryText.js';
+import TimelineEntryFeatured from './types/TimelineEntryFeatured.js';
+import TimelineEntryHero from './types/TimelineEntryHero.js';
+import TimelineEntryText from './types/TimelineEntryText.js';
 import { TIMELINE_ENTRY_TYPE } from '../../Constants.js';
 
 /**
@@ -8,7 +8,7 @@ import { TIMELINE_ENTRY_TYPE } from '../../Constants.js';
  * @param  {Object} entryData the timeline data from the JSON structure
  * @return {TimelineEntry} a timeline entry class instance
  */
-const entryFactory = function( entryData ) {
+export const entryFactory = function( entryData ) {
   switch( entryData.type ) {
     case TIMELINE_ENTRY_TYPE.FEATURED:
       return new TimelineEntryFeatured( entryData );
@@ -17,6 +17,4 @@ const entryFactory = function( entryData ) {
     case TIMELINE_ENTRY_TYPE.TEXT:
       return new TimelineEntryText( entryData );
   }
-}
-
-export { entryFactory }
+};
