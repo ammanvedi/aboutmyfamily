@@ -1,0 +1,42 @@
+.picture-element {
+
+  &__picture {
+
+  }
+
+  &__img {
+
+  }
+
+  &__text {
+    background: $background-black;
+    padding: 1rem;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    width: calc( 45% + #{ $timeline-hero-inset } );
+     &--white {
+       background: white;
+     }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.8rem;
+  }
+
+  &--tall {
+    .picture-element__img {
+      width: 55%;
+      margin-top: 5.5rem;
+    }
+  }
+}

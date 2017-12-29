@@ -13,6 +13,11 @@ gulp.task( 'js', () => {
     .pipe( gulp.dest( config.dist.location ) );
 } );
 
+gulp.task( 'img', () => {
+  return gulp.src( config.src.img )
+    .pipe( gulp.dest( config.dist.img ) );
+} );
+
 gulp.task( 'css', () => {
   return gulp.src( config.src.css )
     .pipe( sass() )
@@ -31,4 +36,4 @@ gulp.task( 'webserver', () => {
   }));
 } );
 
-gulp.task( 'default', [ 'js', 'css', 'html' ] );
+gulp.task( 'default', [ 'js', 'css', 'html', 'img' ] );

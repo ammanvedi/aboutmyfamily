@@ -1,7 +1,8 @@
+@import 'global/variables';
 @import 'global/reset';
 @import 'global/trumps';
-// Global constants
-@import 'global/variables';
+@import 'global/typography';
+
 
 // Define the site layout
 @import 'layout/grid';
@@ -9,3 +10,6 @@
 
 // components
 @import 'component/timeline-entry';
+@import 'component/picture-element';
+@import 'component/timeline-hero';
+@import 'component/timeline-line';

@@ -1,0 +1,46 @@
+.timeline-hero {
+  &__text-section {
+
+  }
+
+  &__image {
+    left: -$timeline-hero-inset;
+    position: relative;
+    margin-bottom: 5rem;
+    max-height: 93vh;
+    overflow: hidden;
+    width: calc( 100% + #{ $timeline-hero-inset } );
+  }
+
+  &__heading {
+    margin-top: 25vh;
+    text-align: center;
+  }
+
+  &__subtitle {
+    left: -6rem;
+    position: relative;
+    font-size: 7.5rem;
+    margin-bottom: 0;
+    color: $text-grey;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  &__title {
+    color: $text-black;
+    position: relative;
+    font-size: 7.5rem;
+    margin-top: -5rem;
+    display: inline-block;
+  }
+
+  &__text {
+    max-width: 47.5rem;
+    margin: 0 auto;
+  }
+
+  &__image-section {
+    background-color: $background-black;
+  }
+}
